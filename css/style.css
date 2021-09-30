@@ -4,15 +4,18 @@
   box-sizing: border-box;
 }
 
+body{
+  background-color: black;
+}
+
 header{
   height: 40px;
-  background-color:blueviolet;
 }
 
 main{
   height: calc(100vh - 120px);
-  background-color: black;
   overflow: auto;
+  padding: 50px;
 }
 
 footer{
@@ -55,8 +58,40 @@ a{
   left: 5px;
 }
 
-/*  */
+/************ MAIN *************/
+.group-talk{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
 
+
+.img-person{
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  background-image: url("http://placekitten.com/250/150");
+  width: 250px;
+  height: 150px;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  color: white;
+  margin: 5px;
+}
+
+.img-person i{
+  position: absolute;
+  bottom: 2px;
+  left: 2px;
+  font-size: 13px;
+}
+
+.name-person{
+  background-color: rgba(0, 0, 0, .3);
+  padding: 0 5px 0 22px;
+}
 
 
 /*********** FOOTER *************/
@@ -110,15 +145,16 @@ button.chevron i{
 
 .right-pannel button{
   display:flex;
-  align-items: flex-end;
+  align-items:  flex-end;
   width: 100px;
   background-color: #4B4A4C;
   border-radius: 0 0 15px 0 ;
-  margin: 0 55px;
 }
 
 .right-pannel a{
   color: #B5212D;
+  display:flex;
+  align-items: flex-end;
 }
 
 .green-btn i{
