@@ -4,3 +4,123 @@
   box-sizing: border-box;
 }
 
+header{
+  height: 40px;
+  background-color:blueviolet;
+}
+
+main{
+  height: calc(100vh - 120px);
+  background-color: black;
+  overflow: auto;
+}
+
+footer{
+  height: 80px;
+  background-color: blue;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+.container-flex{
+  display: flex;
+}
+
+.container-flex.speak-view{
+  justify-content: flex-end;
+}
+
+.container-flex.speak-view button{
+  background-color: #4B4A4C;
+  border: none;
+  padding: 4px;
+  border-radius: 5px;
+  margin: 3px;
+}
+
+.speaker {
+  position: relative;
+}
+
+.container-flex.speak-view button.speaker{
+  padding-left: 25px;
+}
+
+.speaker i{
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+/*  */
+
+
+
+/*********** FOOTER *************/
+
+footer{
+  justify-content: space-between;
+  background-color: #232123;
+}
+
+.left-pannel, .mid-pannel, .right-pannel{
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.left-pannel{
+  /* width: 300px; */
+}
+
+.mid-pannel{
+  /* width: 800px; */
+}
+
+.right-pannel{
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer button{
+  background-color: #232123;
+  border: none;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  justify-content: space-around;
+  padding: 0 10px;
+}
+
+footer button i{
+  font-size: 30px;
+  color: white;
+}
+
+button.chevron i{
+  font-size: 10px;
+}
+
+.right-pannel button{
+  display:flex;
+  align-items: flex-end;
+  width: 100px;
+  background-color: #4B4A4C;
+  border-radius: 0 0 15px 0 ;
+  margin: 0 55px;
+}
+
+.right-pannel a{
+  color: #B5212D;
+}
+
+.green-btn i{
+  color: green;
+}
