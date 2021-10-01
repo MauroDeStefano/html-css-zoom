@@ -71,7 +71,7 @@ a{
   display: flex;
   flex-wrap: wrap;
   position: relative;
-  background-image: url("http://placekitten.com/250/150");
+  background-image: url("http://placekitten.com/246/146");
   width: 250px;
   height: 150px;
   background-size: cover;
@@ -106,6 +106,7 @@ footer{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  flex-shrink: 0;
 }
 
 .left-pannel{
